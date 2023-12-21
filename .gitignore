@@ -112,3 +112,4 @@ __pypackages__/
 .idea/*
 .idea/*.xml
 /static/images/goods/
+/media/
