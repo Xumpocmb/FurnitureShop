@@ -2,4 +2,11 @@ from django.shortcuts import render
 
 
 def index(request):
-    return render(request, 'shop_app/index.html')
+    context = {
+        'title': 'FurnitureShop - Home',
+    }
+    return render(request, 'shop_app/index.html', context)
+
+
+def about(request):
+    return render(request, 'shop_app/about.html')

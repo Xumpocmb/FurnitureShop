@@ -111,3 +111,4 @@ __pypackages__/
 .idea/
 .idea/*
 .idea/*.xml
+/static/images/goods/

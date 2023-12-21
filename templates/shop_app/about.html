@@ -1,15 +1,15 @@
 {% extends 'shop_app/base.html' %}
 {% load static %}
 
-{% block css_index %}
-    <!-- Стиль footer-a для главной страницы -->
-    <link rel="stylesheet" href="{% static 'css/my_footer_css.css' %}">
-    <!-- Favicons for different platforms -->
-{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
 
 
 {% block content %}
-    <h1 class="mt-5 pt-5"><strong>Магазин мебели HOME</strong></h1>
+    <div class="my-5 pt-5 px-2 pb-2 bg-white custom-shadow rounded">
+        <h2 class="m-2"><strong>О нас</strong></h2>
+        <p class="m-2" style="font-size: 1.2rem;">Текст о том какой классный этот интернет магазин.</p>
+    </div>
 {% endblock %}
 
 {% block footer %}
@@ -19,3 +19,5 @@
         </div>
     </footer>
 {% endblock %}
+
+
