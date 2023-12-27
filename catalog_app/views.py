@@ -2,6 +2,7 @@ from django.shortcuts import render
 
 
 def catalog(request):
+    # 04:39
     context = {
         'title': 'FurnitureShop - Catalog',
     }
