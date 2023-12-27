@@ -1,9 +1,12 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Product, Category
 
 
-def catalog(request):
-    goods = Product.objects.all()
+def catalog(request, slug):
+    if slug == 'all':
+        goods = Product.objects.all()
+    else:
+        goods = get_object_or_404(Product.objects.filter(category__slug=slug))
     context = {
         'title': 'FurnitureShop - Catalog',
         'goods': goods,
