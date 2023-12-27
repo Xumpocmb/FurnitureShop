@@ -33,3 +33,11 @@ class Product(models.Model):
 
     def __str__(self):
         return f'Товар: {self.name}'
+
+    def display_id(self):
+        return f'ID: {self.id:05}'
+
+    def sell_price(self):
+        if self.discount:
+            return self.price - (self.price * self.discount / 100)
+        return self.price

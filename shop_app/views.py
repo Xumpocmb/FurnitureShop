@@ -5,7 +5,6 @@ from catalog_app.models import Category
 def index(request):
     context = {
         'title': 'FurnitureShop - Home',
-        'categories': Category.objects.all(),
     }
     return render(request, 'shop_app/index.html', context)
 
