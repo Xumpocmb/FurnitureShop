@@ -12,6 +12,7 @@
             </button>
 
             <form action="
+                    
                     {% if request.GET.q %}{% url 'catalog_app:search' %}{% else %}{% url 'catalog_app:catalog' slug_url %}{% endif %}"
                   method="get" class="dropdown-menu bg-dark" data-bs-theme="dark">
                 <div class="form-check text-white mx-3">
@@ -61,7 +62,7 @@
             <div class="col-lg-4 col-md-6 p-4">
                 <div class="card border-primary rounded custom-shadow">
                     <img src="
-
+                            
                             {% if good.image %}{{ good.image.url }}{% else %}{% static 'images/not_found.png' %}{% endif %}"
                          class="card-img-top" alt="{{ good.name }}">
                     <div class="card-body">
