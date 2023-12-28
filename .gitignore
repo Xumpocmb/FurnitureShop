@@ -113,3 +113,4 @@ __pypackages__/
 .idea/*.xml
 /static/images/goods/
 /media/
+/docker.env

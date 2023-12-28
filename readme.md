@@ -1,5 +1,5 @@
 # Furniture Shop
-07-37
+08-26
 Добро пожаловать в проект "Furniture Shop" – веб-приложение, разработанное с использованием Django 5.0 и Python 3.11 для создания удобного и приятного опыта покупок мебели для дома.
 
 ## Установка
@@ -8,6 +8,15 @@
 2. Склонируйте репозиторий: `git clone https://github.com/Xumpocmb/FurnitureShop.git`
 3. Перейдите в директорию проекта: `cd FurnitureShop`
 4. Установите зависимости: `pip install -r requirements.txt`
+5. for postgresql: `sudo apt install libpq5`
+
+## БД
+`sudo -i -u postgres`
+`pasql`
+`CREATE DATABASE FS_shop;`
+`createuser --interactive`
+`psql -d fs_shop -U xumpocmb`
+
 
 ## Запуск
 
