@@ -1,4 +1,4 @@
-{% extends 'shop_app/base.html' %}
+{% extends 'base.html' %}
 {% load static %}
 {% load catalog_tags %}
 
@@ -61,7 +61,7 @@
             <div class="col-lg-4 col-md-6 p-4">
                 <div class="card border-primary rounded custom-shadow">
                     <img src="
-                            
+
                             {% if good.image %}{{ good.image.url }}{% else %}{% static 'images/not_found.png' %}{% endif %}"
                          class="card-img-top" alt="{{ good.name }}">
                     <div class="card-body">
