@@ -1,5 +1,5 @@
 # Furniture Shop
-08-26
+09-26
 Добро пожаловать в проект "Furniture Shop" – веб-приложение, разработанное с использованием Django 5.0 и Python 3.11 для создания удобного и приятного опыта покупок мебели для дома.
 
 ## Установка
@@ -16,7 +16,9 @@
 `CREATE DATABASE FS_shop;`
 `createuser --interactive`
 `psql -d fs_shop -U xumpocmb`
-
+`python3 manage.py loaddata fixtures/products.json`
+`python3 manage.py loaddata fixtures/categories.json`
+`DROP DATABASE fs_shop;`
 
 ## Запуск
 
