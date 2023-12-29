@@ -32,7 +32,6 @@ def user_cart(request):
     return render(request, 'users_app/cart.html', context)
 
 
-
 def login(request):
     context = {
         'title': 'FurnitureShop - Login',
