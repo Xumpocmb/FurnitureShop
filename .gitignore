@@ -114,3 +114,6 @@ __pypackages__/
 /static/images/goods/
 /media/
 /docker.env
+
+
+docker-compose.yml
