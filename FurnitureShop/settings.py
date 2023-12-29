@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'shop_app',
     'catalog_app',
     'users_app',
+    'carts_app'
 ]
 
 MIDDLEWARE = [
@@ -166,4 +167,6 @@ AUTH_USER_MODEL = 'users_app.User'
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
 ]
+
+# LOGIN_URL = 'users_app:login'
 

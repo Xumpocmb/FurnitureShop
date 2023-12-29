@@ -8,7 +8,7 @@ urlpatterns = [
     path('', include('shop_app.urls', namespace='shop_app')),
     path('catalog/', include('catalog_app.urls', namespace='catalog_app')),
     path('user/', include('users_app.urls', namespace='users_app')),
-]
+    path('cart/', include('carts_app.urls', namespace='carts_app')),]
 
 if settings.DEBUG:
     # подключаем media для отладки
