@@ -25,6 +25,14 @@ def profile(request):
     return render(request, 'users_app/profile.html', context)
 
 
+def user_cart(request):
+    context = {
+        'title': 'FurnitureShop - Cart',
+    }
+    return render(request, 'users_app/cart.html', context)
+
+
+
 def login(request):
     context = {
         'title': 'FurnitureShop - Login',
