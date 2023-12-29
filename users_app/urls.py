@@ -6,7 +6,7 @@ app_name = 'users_app'
 
 urlpatterns = [
     path('profile/', profile, name='profile'),
-    path('user-cart/', user_cart, name='user_cart'),
+    path('user_cart/', user_cart, name='user_cart'),
     path('login/', login, name='login'),
     path('register/', register, name='register'),
     path('logout/', logout, name='logout'),
